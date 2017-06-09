@@ -1,0 +1,7 @@
+src/triax/triax_class.cc		GPLv3+src/triax/triax_class.h			GPLv3+src/triax/triax_close.cc		GPLv3+src/triax/triax_front.cc		GPLv3+src/triax/triax_mirror.cc		GPLv3+src/triax/triax_scan.cc			GPLv3+src/triax/triax_side.cc			GPLv3+src/triax/triax_turret.cc		GPLv3+src/triax/triax.cc			GPLv3+
+src/serial/serial.cc			GPLv3+
+src/serial/serial_class.h		GPLv3+
+src/serial/serial_class.cc		GPLv3+
+src/serial/__srl_properties__.cc	GPLv3+
+src/serial/srl_read.cc			GPLv3+
+src/serial/srl_write.cc			GPLv3+

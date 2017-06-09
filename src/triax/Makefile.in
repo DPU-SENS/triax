@@ -1,0 +1,22 @@
+OCT := triax.oct triax_close.oct triax_front.oct triax_mirror.oct triax_scan.oct triax_side.oct triax_turret.oct serial.oct srl_write.oct srl_read.oct __srl_properties__.oct
+OBJ := triax_class.o serial_class.o
+
+MKOCTFILE ?= mkoctfile -g
+
+CFLAGS     = @DEFS@
+
+all: $(OBJ) $(OCT)
+
+%.o: %.cc
+	$(MKOCTFILE) $(CFLAGS) $(CXXFLAGS) -c $^
+
+%.oct: %.o $(OBJ)
+	$(MKOCTFILE) $^ -o ../$@
+
+clean:
+	rm -f *.oct *.o
+
+distclean: clean
+	rm Makefile
+
+.PHONY: all clean

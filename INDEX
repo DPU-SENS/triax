@@ -1,0 +1,18 @@
+Triax >> Serial commands for triax spectrometer.
+TRIAX
+	triax_close.cc	triax_front.cc	triax_mirror.cc	triax_scan.cc	triax_side.cc	triax_turret.cc	triax.cc
+Serial
+	serial
+	fopen
+	fclose
+	get
+	set
+	srl_read
+	srl_write
+	srl_baudrate
+	srl_bytesize
+	srl_flush
+	srl_parity
+	srl_stopbits
+	srl_timeout
+	srl_close

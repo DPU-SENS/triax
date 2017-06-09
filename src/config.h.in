@@ -1,0 +1,4 @@
+/* build TRIAX interface functions */
+#undef BUILD_TRIAX
+/* build SERIAL interface functions */
+#undef BUILD_SERIAL
